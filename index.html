@@ -1,126 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <title>Triforce War & More - Online Battle Games | triforcewar.shop</title>
-  <meta name="description" content="Play Triforce War and other exciting online battle games at triforcewar.shop. Discover and enjoy top online games with smooth gameplay." />
-  <meta name="keywords" content="triforcewar, triforce war game, online battle game, online games, free games" />
-  <link rel="canonical" href="https://triforcewar.shop/" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Play Hero Transform Race - an exciting online racing game where heroes shift forms to overcome extreme obstacles!"
+    />
+    <meta name="keywords" content="herotransformrace, hero transform race, online racing game, free HTML5 games" />
+    <meta name="author" content="herotransformrace.space" />
+    <link rel="canonical" href="https://herotransformrace.space/" />
+    <title>Hero Transform Race | Play Free Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-  <!-- Tailwind CDN for demo, in production use build tools -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <header class="bg-white shadow-md p-4 md:p-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h1 class="text-3xl md:text-5xl font-bold text-blue-600">
+          Hero Transform Race
+        </h1>
+        <p class="mt-2 text-lg md:text-xl text-gray-600">
+          Shift shapes, dodge obstacles, and race to victory!
+        </p>
+      </div>
+    </header>
 
-  <style>
-    /* Custom scrollbar for modern look */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #f0f0f5;
-    }
-    ::-webkit-scrollbar-thumb {
-      background-color: #5a7dff;
-      border-radius: 10px;
-      border: 2px solid #f0f0f5;
-    }
-  </style>
-</head>
-<body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
+    <main class="max-w-5xl mx-auto p-4 md:p-8">
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+          Play the Game
+        </h2>
+        <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+          <iframe
+            src="https://gamedistribution.com/games/hero-transform-race"
+            class="absolute top-0 left-0 w-full h-full border-0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
 
-  <!-- Header -->
-  <header class="sticky top-0 bg-white border-b border-gray-200 z-30">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between py-4">
-      <h1 class="text-3xl font-semibold text-blue-700 mb-3 md:mb-0">triforcewar.shop</h1>
-      <input 
-        type="search" 
-        id="searchInput" 
-        placeholder="Search games..." 
-        class="w-full md:w-64 rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        aria-label="Search games"
-      />
-    </div>
-  </header>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2">
+          About Hero Transform Race
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          Hero Transform Race is a thrilling obstacle course game where you must switch between different hero forms—runner, swimmer, flyer—to overcome each challenge. Master your timing and reflexes to defeat the course and become the ultimate shape-shifting champion. No downloads, just play instantly online!
+        </p>
+      </section>
 
-  <!-- Main Content -->
-  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <section aria-label="Game Gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gamesGrid">
-      <!-- Game cards inserted by JS -->
-    </section>
-  </main>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2">Game Features</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Fast-paced transformation mechanics</li>
+          <li>Colorful and dynamic obstacle courses</li>
+          <li>Runs smoothly on both PC and mobile</li>
+          <li>Free to play - no installation required</li>
+        </ul>
+      </section>
+    </main>
 
-  <!-- Footer -->
-  <footer class="bg-white border-t border-gray-200 py-6 mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600 text-sm space-x-6">
-      <a href="#" class="hover:text-blue-600">About Us</a>
-      <a href="/" class="hover:text-blue-600">All Games</a>
-      <a href="mailto:contact@triforcewar.shop" class="hover:text-blue-600">Contact</a>
-    </div>
-    <p class="text-center text-gray-400 text-xs mt-2">&copy; 2025 triforcewar.shop. All rights reserved.</p>
-  </footer>
-
-  <!-- JS: Game data + Search -->
-  <script>
-    // Game list, can be expanded
-    const games = [
-      {
-        name: 'Triforce War',
-        slug: 'triforcewar',
-        description: 'Epic online battle game with strategic gameplay.',
-        url: '/games/triforcewar.html',
-        thumbnail: 'https://cloud.onlinegames.io/games/2025/unity/monster-survivors/thumbnail.jpg' // (example)
-      },
-      {
-        name: 'Monster Survivors',
-        slug: 'monstersurvivors',
-        description: 'Survive waves of monsters in this thrilling game.',
-        url: '/games/monstersurvivors.html',
-        thumbnail: 'https://example.com/monstersurvivors-thumb.jpg'
-      },
-      {
-        name: 'Battle Arena',
-        slug: 'battlearena',
-        description: 'Fight in fast-paced online battle arenas.',
-        url: '/games/battlearena.html',
-        thumbnail: 'https://example.com/battlearena-thumb.jpg'
-      }
-      // Add more games here
-    ];
-
-    const gamesGrid = document.getElementById('gamesGrid');
-    const searchInput = document.getElementById('searchInput');
-
-    function renderGames(filter = '') {
-      const filtered = games.filter(game => 
-        game.name.toLowerCase().includes(filter.toLowerCase())
-      );
-      gamesGrid.innerHTML = filtered.length
-        ? filtered.map(game => `
-          <a href="${game.url}" class="block rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Play ${game.name}">
-            <img 
-              src="${game.thumbnail || 'https://via.placeholder.com/320x180?text=Game+Image'}" 
-              alt="${game.name} thumbnail" 
-              class="w-full h-40 object-cover rounded-t-lg"
-              loading="lazy"
-            />
-            <div class="p-4">
-              <h2 class="text-lg font-semibold text-gray-900 mb-1">${game.name}</h2>
-              <p class="text-gray-600 text-sm line-clamp-2">${game.description}</p>
-            </div>
-          </a>
-        `).join('')
-        : `<p class="col-span-full text-center text-gray-500">No games found matching your search.</p>`;
-    }
-
-    // Initial render
-    renderGames();
-
-    // Search event
-    searchInput.addEventListener('input', e => {
-      renderGames(e.target.value);
-    });
-  </script>
-
-</body>
+    <footer class="bg-white text-center text-sm text-gray-500 p-4 border-t">
+      © 2025 herotransformrace.space · All rights reserved.
+    </footer>
+  </body>
 </html>
